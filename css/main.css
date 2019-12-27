@@ -1,0 +1,55 @@
+/* 초기화 init */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 10px;
+}
+
+/* 이름 꾸미기 name decoration */
+h2#my_name a {
+    text-decoration: none;
+    color:white;
+    text-shadow: 2px 2px black,
+     0 0 3px black, 1px 1px 1px black;  /* 텍스트 그림자 */
+}
+
+/* 사진 영역*/
+#profile{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+#profile, #sec {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/* 사진 동그랗게 */
+#pro_img {border-radius: 50%;}
+
+/* 포트폴리오 */
+#sec_left {
+    display: inline-block;
+    width: 49%;
+    background-color:whitesmoke;
+}
+#sec_right{
+    display: inline-block;
+    width:49%;
+    background-color: thistle;
+}
+
+/* footer */
+footer {
+    margin-top: 600px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    background-color: whitesmoke;
+}
