@@ -8,26 +8,30 @@ header {
     text-align: center;
     padding-top: 3%;
     padding-bottom: 3%;
-    background-color: aliceblue;
+    background-color: #6e6e6e;
+    position: fixed;
+    margin: auto 0;
+    left: 0;
+    right: 0;
 }
 
 /* 이름 꾸미기 name decoration */
-h1#my_name a {
+h2#my_name a {
     text-decoration: none;
     color:white;
     text-shadow: 
         2px 2px black,
         0 0 3px black,
-        4px 2px 2px gray,
-        6px 2px 2px gray,
-        2px 4px 2px gray,
+        4px 2px 2px black,
+        6px 2px 2px black,
+        2px 4px 2px black,
         1px 1px 1px black;  /* 텍스트 그림자 */
 }
 
 /* 사진 영역*/
 #profile{
     text-align: center;
-    padding-top: 5%;
+    padding-top: 17%;
     padding-bottom: 5%;
 }
 #profile, #sec {
@@ -38,10 +42,26 @@ h1#my_name a {
 /* 사진 동그랗게 */
 #pro_img {border-radius: 50%;}
 
+/* 앨범 형 섹션 */
+section#sec_album {
+    margin: auto 0;
+    padding-left:15%;
+    padding-right: 15%;
+    text-align: center;
+}
+section#sec_album > div {
+    display: inline-block;
+    margin: auto 0;
+    text-align: center;
+}
+section#sec_album img {
+    width:200px;
+}
+
 /* Portfolio */
 #sec_left > ul, #sec_right > ul {list-style: none;} /* 리스트 스타일 없애기 */
-#sec a { text-decoration: none; }
-#sec a:link { text-decoration: none; }
+#sec a { text-decoration: none; color:black; }
+#sec a:default { text-decoration: none; }
 #sec a:visited { text-decoration: none;}
 #sec_left {
     display: inline-block;
@@ -68,7 +88,8 @@ footer {
     padding-right: 15%;
     padding-top:5%;
     padding-bottom: 5%;
-    background-color: whitesmoke;
+    background-color:#2E2E2E;
+    color:whitesmoke;
 }
 
 /* top_btn */
