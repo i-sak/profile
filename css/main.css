@@ -20,6 +20,7 @@ h1#my_name a {
         0 0 3px black,
         4px 2px 2px gray,
         6px 2px 2px gray,
+        2px 4px 2px gray,
         1px 1px 1px black;  /* 텍스트 그림자 */
 }
 
@@ -37,11 +38,22 @@ h1#my_name a {
 /* 사진 동그랗게 */
 #pro_img {border-radius: 50%;}
 
-/* 포트폴리오 */
+/* Portfolio */
+#sec_left > ul, #sec_right > ul {list-style: none;} /* 리스트 스타일 없애기 */
+#sec a { text-decoration: none; }
+#sec a:link { text-decoration: none; }
+#sec a:visited { text-decoration: none;}
 #sec_left {
     display: inline-block;
     width: 49%;
     background-color:whitesmoke;
+}
+
+#sec_left > ul > li:nth-child(even){ /* 짝수번째 */
+    background-color: thistle;
+}
+#sec_right > ul > li:nth-child(even){ /* 짝수번째 */
+    background-color: whitesmoke;
 }
 #sec_right{
     display: inline-block;
@@ -57,4 +69,13 @@ footer {
     padding-top:5%;
     padding-bottom: 5%;
     background-color: whitesmoke;
+}
+
+/* top_btn */
+#top_btn {  
+    position: fixed;
+    margin: 0 auto;
+    bottom: 2%;
+    left: 85%; /* 가운데 정렬하려면 L=0, R=0 */
+    right: 0;
 }
