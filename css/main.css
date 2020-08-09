@@ -124,4 +124,5 @@ footer h3 {
     bottom: 2%;
     left: 85%; /* 가운데 정렬하려면 L=0, R=0 */
     right: 0;
+    opacity: 0;
 }

@@ -9,7 +9,7 @@ function chkSize(e){
     var sec_album = document.getElementById("sec_album");
     
     // 화면 작아질 경우
-    if (width <= 1075) {
+    if (width <= 1075 && width > 360)  {
         for(var i = 0 ; i < boxs.length; i++) {
             boxs[i].children[0].firstElementChild.style.width = "100px";
             boxs[i].children[0].firstElementChild.style.height = "100px";
@@ -19,7 +19,17 @@ function chkSize(e){
             // 섹션
             sec_album.style.paddingLeft = "8%";
             sec_album.style.paddingRight = "8%";
-
+        }
+    } else if (width <=360 ) {
+        for(var i = 0 ; i < boxs.length; i++) {
+            boxs[i].children[0].firstElementChild.style.width = "50px";
+            boxs[i].children[0].firstElementChild.style.height = "50px";
+            boxs[i].style.fontSize = "6px";
+            boxs[i].style.width = "110px";
+            boxs[i].style.height = "150px";
+            // 섹션
+            sec_album.style.paddingLeft = 0;
+            sec_album.style.paddingRight = 0;
         }
     } else {    // 화면 크면 원상복구
         for(var i = 0 ; i < boxs.length; i++) {
@@ -35,17 +45,31 @@ function chkSize(e){
     }
 }
 
-// HeaderToggle
-var prevScrollpos = window.pageYOffset;
-console.log("first Y offset : "+prevScrollpos) // first value : 0
-window.onscroll =headerbarToggle
-function headerbarToggle() {
+
+// mainOpacityToggle
+function mainOpacityToggle() {
+    headerbarToggle();
+    topButtonToggle();
+}
+// headerbarToggle
+function headerbarToggle() {    
     var headerbar = document.getElementById("headerbar");
-    
     var currentScrollPos = window.pageYOffset; // current Y offset
-    if (prevScrollpos < currentScrollPos) {
+    if (0 < currentScrollPos) {
         headerbar.style.opacity = 0.1;  
     } else {        
         headerbar.style.opacity = 1;   
+    }
+}
+// topButtonToggle
+function topButtonToggle() {
+    var top_btn = document.getElementById("top_btn");
+    var currentScrollPos = window.pageYOffset; // current Y offset
+    var height = document.body.scrollHeight;
+
+    if ( currentScrollPos >= height/3  ) {
+        top_btn.style.opacity = 1;  
+    } else {        
+        top_btn.style.opacity = 0;   
     }
 }
