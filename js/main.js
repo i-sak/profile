@@ -8,7 +8,6 @@ function chkSize(e){
 
     var sec_album = document.getElementById("sec_album");
     
-    
     // 화면 작아질 경우
     if (width <= 1075) {
         for(var i = 0 ; i < boxs.length; i++) {
@@ -33,5 +32,20 @@ function chkSize(e){
             sec_album.style.paddingLeft = "12%";
             sec_album.style.paddingRight = "12%";
         }
+    }
+}
+
+// HeaderToggle
+var prevScrollpos = window.pageYOffset;
+console.log("first Y offset : "+prevScrollpos) // first value : 0
+window.onscroll =headerbarToggle
+function headerbarToggle() {
+    var headerbar = document.getElementById("headerbar");
+    
+    var currentScrollPos = window.pageYOffset; // current Y offset
+    if (prevScrollpos < currentScrollPos) {
+        headerbar.style.opacity = 0.1;  
+    } else {        
+        headerbar.style.opacity = 1;   
     }
 }

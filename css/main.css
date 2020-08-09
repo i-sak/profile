@@ -17,6 +17,8 @@ header {
     margin: auto 0;
     left: 0;
     right: 0;
+    /* 반투명해지기 */
+    transition : opacity 1s;
 }
 
 /* 이름 꾸미기 name decoration */
