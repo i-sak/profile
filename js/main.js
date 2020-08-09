@@ -25,7 +25,7 @@ function chkSize(e){
             boxs[i].children[0].firstElementChild.style.width = "50px";
             boxs[i].children[0].firstElementChild.style.height = "50px";
             boxs[i].style.fontSize = "11px";
-            boxs[i].style.width = "97px";
+            boxs[i].style.width = "100px";
             boxs[i].style.height = "150px";
             // 섹션
             sec_album.style.paddingLeft = 0;
