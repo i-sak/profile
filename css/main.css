@@ -125,4 +125,5 @@ footer h3 {
     left: 85%; /* 가운데 정렬하려면 L=0, R=0 */
     right: 0;
     opacity: 0;
+    transition : opacity 0.3s;
 }
