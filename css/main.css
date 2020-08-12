@@ -56,9 +56,20 @@ h1#my_name a {
     animation-duration: 1s;
     animation-iteration-count: 1;
 }
+/* --------sns---------*/
+section#sns {
+    text-align: center;
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-bottom: 3%;
+}
+section#sns img {
+    width:7%;
+}
 
 
-/* 앨범 형 섹션 Portfolio */
+
+/*-------------- 앨범 형 섹션 Portfolio */
 section#sec_album {
     margin: auto 0;
     padding-left:12%;
