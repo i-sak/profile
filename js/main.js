@@ -4,12 +4,11 @@ function chkSize(e){
     console.log(window.innerWidth);
     // 브라우저 너비
     var width = window.innerWidth;
+    var sec_album = document.getElementById("sec_album");
     var boxs = document.getElementsByClassName("album_box");
 
-    var sec_album = document.getElementById("sec_album");
-    
     // 화면 작아질 경우
-    if (width <= 1075 && width > 450)  {
+    if (width <= 1075 && width > 455)  {
         for(var i = 0 ; i < boxs.length; i++) {
             boxs[i].children[0].firstElementChild.style.width = "100px";
             boxs[i].children[0].firstElementChild.style.height = "100px";
@@ -20,7 +19,7 @@ function chkSize(e){
             sec_album.style.paddingLeft = "8%";
             sec_album.style.paddingRight = "8%";
         }
-    } else if (width <=450 ) {
+    } else if (width <=455 ) {
         for(var i = 0 ; i < boxs.length; i++) {
             boxs[i].children[0].firstElementChild.style.width = "50px";
             boxs[i].children[0].firstElementChild.style.height = "50px";
@@ -56,7 +55,7 @@ function headerbarToggle() {
     var headerbar = document.getElementById("headerbar");
     var currentScrollPos = window.pageYOffset; // current Y offset
     if (0 < currentScrollPos) {
-        headerbar.style.opacity = 0.1;  
+        headerbar.style.opacity = 0.0;  
     } else {        
         headerbar.style.opacity = 1;   
     }
@@ -71,5 +70,14 @@ function topButtonToggle() {
         top_btn.style.opacity = 1;  
     } else {        
         top_btn.style.opacity = 0;   
+    }
+}
+
+function descConfirm() {
+    var val = prompt("제 휴대폰 가운대 4자리를 입력해주세요.");
+    if (val == 7577) {
+        window.open('about:_blank').location.href='./careerstatement.html'
+    } else {
+        return;
     }
 }
