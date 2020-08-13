@@ -63,8 +63,8 @@ header#headerbar a {
 }
 
 /* 경력기술서*/
-#desc:link ,#desc:visited {text-decoration: none; color:black}
-#desc {
+#careerStatement:link ,#careerStatement:visited {text-decoration: none; color:black}
+#careerStatement {
     display: block;
     text-align: center;
     width: 20%;
@@ -75,10 +75,10 @@ header#headerbar a {
     transition-property: background-color, color;
     transition-duration: 0.7s;
 }
-#desc:hover {
+#careerStatement:hover {
     background-color: darkblue;
-    color:white
-    
+    color:white;
+    cursor: pointer;
 }
 /* section title*/
 p.sectionTitle {
