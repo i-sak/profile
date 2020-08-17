@@ -1,0 +1,11 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body  {
+    width: 100%;
+}
+
+video {
+    margin: 1% 10%;
+}
