@@ -7,6 +7,25 @@
     padding: 0;
     font-family:'Nanum Gothic';
 }
+
+#mask {  
+    position:absolute;  
+    left:0;
+    top:0;
+    z-index:10;  
+    background-color:#000;  
+    display:none;  
+  }
+  .window a:link, .window a:visited {color:white;}
+  .window {
+      color: white;
+      display: none;
+      position: fixed;
+      left: 45%;
+      top: 50%;
+      z-index: 15;
+  }
+
 body{
     background-color:#f0f0f0;
     

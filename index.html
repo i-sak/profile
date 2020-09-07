@@ -7,9 +7,21 @@
     <title>i-sak</title>
     
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body onload="chkSize(event)" onscroll="mainOpacityToggle()">
+    
+    <div id="mask">
+        <div class="window">
+            <a href="index2.html">새로운 웹 페이지를 준비중입니다.</a>
+        </div>
+    </div>
+
+    <div style="background-color: rgb(61, 61, 61); text-align: center;">
+        <a style="color:whitesmoke;" href="javascript:wrapWindowByMask()">새로운 웹 페이지를 준비중입니다.</a>
+    </div>
+
     <header id="headerbar">
         <h3 id="my_name"><a href="#">ISAK.KIM</a></h3>
     </header>
